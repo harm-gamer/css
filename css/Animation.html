@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .container{
+            width: 1000px;
+            height: 300px;
+            margin: 10px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+            /* display: flex; */
+            position: absolute;
+        }
+        .box{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 5px;
+            margin: 10px;
+            animation-name: myfirstanimation;
+            animation-duration: 1s;
+            position: relative;
+            
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .box2{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 5px;
+            margin: 10px;
+            animation-name: secondanimation;
+            animation-duration: 1s;
+            position: relative;
+            
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .box3{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: relative;
+            top: 50px;
+            left: 500px;
+            
+        }
+        @keyframes myfirstanimation {
+            from{
+               top: 0;
+               left: 0;
+            }
+            to{
+               top: 0;
+               left: 800px;
+            }
+        }
+            @keyframes secondanimation{
+            from{
+               top: 100px;
+               left: 800px;
+
+            }
+            to{
+               top: 100px;
+               left: 0;
+            }
+            }
+    </style>
+</head>
+
+<body>
+    <div class= "container">
+        <div class=" box">
+        
+        </div>
+        <div class="box3"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
